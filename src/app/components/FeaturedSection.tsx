@@ -1,8 +1,19 @@
 import Link from "next/link";
 import courseData from "../data/music_courses.json";
 
+interface Course {
+  id: number;
+  title: string;
+  slug: string;
+  description: string;
+  price: number;
+  instructor: string;
+  isFeatured: boolean;
+  image: string;
+}
+
 const FeaturedSection = () => {
-    courseData.courses.filter(course => course.isFeatured)
+  courseData.courses.filter((course: Course) => course.isFeatured);
   return (
     <div className="py-12 bg-gray-900">
       <div className="text-center">

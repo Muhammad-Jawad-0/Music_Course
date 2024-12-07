@@ -2,6 +2,7 @@ import Image from "next/image";
 import HeroSection from "./components/HeroSection";
 import FeaturedSection from "./components/FeaturedSection";
 import WhyChooseUs from "./components/WhyChooseUs";
+import MusicSchoolTestimonialCards from "./components/TestimonialCards";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
     <HeroSection />
     <FeaturedSection />
     <WhyChooseUs />
+    <MusicSchoolTestimonialCards />
     </main>
   );
 }
